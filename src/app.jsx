@@ -15,7 +15,7 @@ import Transfer from "@/pages/Transfer.js";
 // Keep the exact filenames/casing; your folder has "PortofolioSummary.js"
 import HoldingCard        from "@/components/holdings/HoldingCard.js";
 import PerformanceChart   from "@/components/holdings/PerformanceChart.js";
-import PortofolioSummary  from "@/components/holdings/PortofolioSummary.js";
+import PortfolioSummary  from "@/components/holdings/PortflioSummary.js";
 import RecentTransactions from "@/components/holdings/RecentTransactions.js";
 
 // Optional: a small showcase page so you can see all Holdings widgets render
