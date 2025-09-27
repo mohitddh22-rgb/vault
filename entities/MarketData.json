@@ -1,0 +1,46 @@
+{
+  "name": "MarketData",
+  "type": "object",
+  "properties": {
+    "metal_type": {
+      "type": "string",
+      "enum": [
+        "gold",
+        "silver"
+      ],
+      "description": "Type of precious metal"
+    },
+    "current_price": {
+      "type": "number",
+      "description": "Current price per troy ounce in USD"
+    },
+    "price_change_24h": {
+      "type": "number",
+      "description": "Price change in last 24 hours"
+    },
+    "price_change_percent_24h": {
+      "type": "number",
+      "description": "Percentage change in last 24 hours"
+    },
+    "volume_24h": {
+      "type": "number",
+      "description": "24 hour trading volume"
+    },
+    "market_cap": {
+      "type": "number",
+      "description": "Market capitalization"
+    },
+    "high_24h": {
+      "type": "number",
+      "description": "24 hour high"
+    },
+    "low_24h": {
+      "type": "number",
+      "description": "24 hour low"
+    }
+  },
+  "required": [
+    "metal_type",
+    "current_price"
+  ]
+}

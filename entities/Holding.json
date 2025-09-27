@@ -1,0 +1,37 @@
+{
+  "name": "Holding",
+  "type": "object",
+  "properties": {
+    "metal_type": {
+      "type": "string",
+      "enum": [
+        "gold",
+        "silver"
+      ],
+      "description": "Type of precious metal"
+    },
+    "ounces": {
+      "type": "number",
+      "description": "Amount in troy ounces"
+    },
+    "average_cost_per_ounce": {
+      "type": "number",
+      "description": "Average purchase price per ounce"
+    },
+    "purchase_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of purchase"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional notes about the holding"
+    }
+  },
+  "required": [
+    "metal_type",
+    "ounces",
+    "average_cost_per_ounce",
+    "purchase_date"
+  ]
+}

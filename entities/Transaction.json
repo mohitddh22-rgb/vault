@@ -1,0 +1,62 @@
+{
+  "name": "Transaction",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "buy",
+        "sell",
+        "transfer_out",
+        "transfer_in"
+      ],
+      "description": "Type of transaction"
+    },
+    "metal_type": {
+      "type": "string",
+      "enum": [
+        "gold",
+        "silver"
+      ],
+      "description": "Type of precious metal"
+    },
+    "ounces": {
+      "type": "number",
+      "description": "Amount in troy ounces"
+    },
+    "price_per_ounce": {
+      "type": "number",
+      "description": "Price per ounce at time of transaction"
+    },
+    "total_amount": {
+      "type": "number",
+      "description": "Total transaction amount in USD"
+    },
+    "counterparty": {
+      "type": "string",
+      "description": "Email of other user (for transfers)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "completed",
+        "cancelled"
+      ],
+      "default": "completed",
+      "description": "Transaction status"
+    },
+    "fees": {
+      "type": "number",
+      "default": 0,
+      "description": "Transaction fees"
+    }
+  },
+  "required": [
+    "type",
+    "metal_type",
+    "ounces",
+    "price_per_ounce",
+    "total_amount"
+  ]
+}
