@@ -2,7 +2,7 @@
   "name": "vault-app",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://mohitddh22.github.io/vault",
+  "homepage": "https://mohitddh22-rgb.github.io/vault",
   "scripts": {
     "predeploy": "npm run build",
     "dev": "vite",
